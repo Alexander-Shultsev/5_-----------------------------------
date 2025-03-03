@@ -1,0 +1,10 @@
+:root {
+    --main-color: #FAEDD8; /* Фон */
+    --on-main-color: #907128;  /* На фоне */
+    --secondary-2-color: #C2B7A2;  /* На фоне основной */
+
+    --accent-color: #DE2B49;  /* Яркий цвет*/
+    --love-1-color: #EECFC7;  /* Блок love */
+    --love-2-color: #F1A8B4;  /* Блок love 2 */
+}
+

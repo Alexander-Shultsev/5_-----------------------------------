@@ -1,0 +1,77 @@
+@import url('variable.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========================== Первый блок ========================== */
+.fullscreen-block {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+/* Изображения */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Расстояние между изображениями */
+}
+
+.fullscreen-block  .image {
+    width: 273px; 
+    object-fit: cover;
+}
+
+/* Первое изображение */
+.fullscreen-block  .bank-1 {
+    transform: rotate(-7deg);
+    z-index: 1;
+}
+
+/* Второе изображение */
+.fullscreen-block  .bank-2 {
+    margin-top: 40px;
+    transform: rotate(7deg); 
+    z-index: 0;
+}
+
+/* Анимация волнообразного движения */
+@keyframes wave-1 {
+    0% {
+        transform: rotate(-7deg) translateY(0);
+    }
+    50% {
+        transform: rotate(-7deg) translateY(-20px) scale(1.02);
+    }
+    100% {
+        transform: rotate(-7deg) translateY(0);
+    }
+}
+
+@keyframes wave-2 {
+    0% {
+        transform: rotate(7deg) translateY(0);
+    }
+    50% {
+        transform: rotate(7deg) translateY(-20px) scale(1.02); 
+    }
+    100% {
+        transform: rotate(7deg) translateY(0);
+    }
+}
+
+/* Применение анимации к изображениям */
+.fullscreen-block .bank-1 {
+    animation: wave-1 5s ease-in-out infinite;
+}
+
+.fullscreen-block .bank-2 {
+    animation: wave-2 5s ease-in-out infinite 0.5s;
+}

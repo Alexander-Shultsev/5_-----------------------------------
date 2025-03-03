@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 /* ========================== Первый блок ========================== */
 .fullscreen-block {
     width: 100vw;

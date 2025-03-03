@@ -6,5 +6,7 @@
     --accent-color: #DE2B49;  /* Яркий цвет*/
     --love-1-color: #EECFC7;  /* Блок love */
     --love-2-color: #F1A8B4;  /* Блок love 2 */
+    
+    --cursor-color: rgba(202, 132, 27, 0.747);  /* Цвет курсора */
 }
 

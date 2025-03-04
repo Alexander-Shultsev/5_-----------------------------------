@@ -73,9 +73,9 @@ body {
 
 /* Применение анимации к изображениям */
 .fullscreen-block .bank-1 {
-    animation: wave-1 3s ease-in-out infinite;
+    animation: wave-1 3000s ease-in-out infinite;
 }
 
 .fullscreen-block .bank-2 {
-    animation: wave-2 3s ease-in-out infinite 0.5s;
+    animation: wave-2 3000s ease-in-out infinite 0.5s;
 }

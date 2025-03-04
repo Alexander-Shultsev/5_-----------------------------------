@@ -1,0 +1,139 @@
+/* Подключение шрифтов */
+
+/* ========================== Playfair Display ========================== */
+
+
+/* Regular */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* SemiBold */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {    
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ExtraBold */
+@font-face {            
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-ExtraBold.ttf') format('ttf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Black */
+@font-face {    
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================== Victor Mono ========================== */
+/* Thin */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-Thin.otf') format('otf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ExtraLight */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-ExtraLight.otf') format('otf');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Light */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-Light.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Regular */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-Medium.otf') format('otf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* SemiBold */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-SemiBold.otf') format('otf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Victor Mono';
+    src: url('../fonts/VictorMono-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================== Применение шрифтов ========================== */
+
+.title-photo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 131px;
+}
+
+.text-photo {
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    color: #ffffffab;
+    font-size: 24px;
+}

@@ -62,7 +62,7 @@
 /* Thin */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Thin.otf') format('otf');
+    src: url('../fonts/VictorMono-Thin.otf') format('opentype');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -71,7 +71,7 @@
 /* ExtraLight */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-ExtraLight.otf') format('otf');
+    src: url('../fonts/VictorMono-ExtraLight.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -80,7 +80,7 @@
 /* Light */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Light.otf') format('otf');
+    src: url('../fonts/VictorMono-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -89,7 +89,7 @@
 /* Regular */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Regular.ttf') format('ttf');
+    src: url('../fonts/VictorMono-Regular.ttf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -98,7 +98,7 @@
 /* Medium */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Medium.otf') format('otf');
+    src: url('../fonts/VictorMono-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -107,7 +107,7 @@
 /* SemiBold */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-SemiBold.otf') format('otf');
+    src: url('../fonts/VictorMono-SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -116,7 +116,7 @@
 /* Bold */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Bold.otf') format('otf');
+    src: url('../fonts/VictorMono-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -132,8 +132,23 @@
 }
 
 .text-photo {
-    font-family: 'Victor Mono', monospace;
+    font-family: 'Victor Mono';
     font-weight: 500;
     color: #ffffffab;
     font-size: 24px;
+}
+
+.text-scroll {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 88px;
+    text-transform: uppercase;
+}
+
+.rotating-text-date {
+    font-family: 'Victor Mono';
+    font-weight: 700;
+    color: var(--on-main-color);
+    font-size: 30px;
 }

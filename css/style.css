@@ -305,14 +305,13 @@ body {
 .date {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     color: var(--on-main-color);
 }
 
 /* Блок с кругами */
 .time-circles {
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -322,28 +321,28 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 5px;
+    margin-right: -15px; /* Отрицательный отступ между кругами */
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 1px solid var(--on-main-color-2);
+}
+
+.time-circle:last-child {
+    margin-right: 0; /* Убираем отступ у последнего круга */
 }
 
 /* Число в круге */
 .circle-number {
-    width: 60px;
-    height: 60px;
-    background-color: var(--on-main-color);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: bold;
+    margin-top: 5px;
+    color: var(--on-main-color);
 }
 
 /* Надпись в круге */
 .circle-label {
-    font-size: 14px;
-    color: #666;
-    text-transform: uppercase;
+    color: var(--on-main-color);
 }
 
 /* Анимация вращения */

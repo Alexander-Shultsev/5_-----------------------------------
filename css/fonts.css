@@ -6,7 +6,7 @@
 /* Regular */
 @font-face {
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -15,7 +15,7 @@
 /* Medium */
 @font-face {
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-Medium.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -25,7 +25,7 @@
 /* SemiBold */
 @font-face {
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
 /* Bold */
 @font-face {    
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@
 /* ExtraBold */
 @font-face {            
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-ExtraBold.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -52,7 +52,7 @@
 /* Black */
 @font-face {    
     font-family: 'Playfair Display';
-    src: url('../fonts/PlayfairDisplay-Black.ttf') format('ttf');
+    src: url('../fonts/PlayfairDisplay-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -122,6 +122,14 @@
     font-display: swap;
 }
 
+/* ========================== AnonymousPro ========================== */
+@font-face {
+    font-family: 'AnonymousPro';
+    src: url('../fonts/AnonymousPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}   
 /* ========================== Применение шрифтов ========================== */
 
 .title-photo {
@@ -152,3 +160,18 @@
     color: var(--on-main-color);
     font-size: 30px;
 }
+
+.where-text {
+    font-family: 'AnonymousPro';
+    font-weight: 400;
+    color: var(--on-main-color);
+    font-size: 30px;
+}
+
+.where-text-lable {
+    font-family: 'AnonymousPro';
+    font-weight: 400;
+    color: var(--on-main-color);
+    font-size: 14px;
+}
+

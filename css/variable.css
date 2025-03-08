@@ -1,6 +1,7 @@
 :root {
     --main-color: #FAEDD8; /* Фон */
     --on-main-color: #907128;  /* На фоне */
+    --on-main-color-2: #90712846;
     --secondary-2-color: #C2B7A2;  /* На фоне основной */
 
     --accent-color: #DE2B49;  /* Яркий цвет*/

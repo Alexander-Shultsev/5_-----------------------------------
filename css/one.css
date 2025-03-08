@@ -141,8 +141,11 @@
 
 .invitation-image .invitation-image-photo {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+}
+
+.invitation-image .invitation-image-photo-one {
+    height: 100%;
 }
 
 .invitation-image .night-block {
@@ -159,8 +162,8 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 25vh;
-    left: 20vh;
+    bottom: 18vh;
+    left: 15vh;
     gap: 60px;
 }
 

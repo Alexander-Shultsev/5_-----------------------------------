@@ -163,5 +163,47 @@
     justify-content: center;
 }
 
+/* Почему приглашаем именно тебя? */
+.invitation-image-photo-two {
+    height: 1560px;
+    object-position: 15% center;
+}
 
+.invitation-text .invitation-subtitle-two {
+    width: 50%;
+}
 
+.invitation-subtitle-two-span {
+    background-color: var(--accent-color);
+}
+
+.invitation-block-three img {
+    height: 100%;
+}
+
+.invitation-block-three .title-photo {
+    width: 50%;
+}
+
+.invitation-block-three .night-block {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.invitation-block-three .invitation-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 18vh;
+    right: 15vh;
+    text-align: right;
+    align-items: flex-end;
+    gap: 60px;
+}
+
+.invitation-block-three .title-photo {
+    width: 80%;
+}

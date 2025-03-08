@@ -89,7 +89,7 @@
 /* Regular */
 @font-face {
     font-family: 'Victor Mono';
-    src: url('../fonts/VictorMono-Regular.ttf') format('opentype');
+    src: url('../fonts/VictorMono-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -173,5 +173,39 @@
     font-weight: 400;
     color: var(--on-main-color);
     font-size: 14px;
+}
+
+.title-large {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 88px;
+    color: #000000;
+}
+
+.big-number {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--secondary-2-color);
+    font-size: 325px;
+}
+
+.grid-item-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: #000000;
+    font-size: 47px;
+}
+
+.grid-item-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #000000b5;
+    font-size: 22px;
+}
+
+.button {
+    font-family: 'Victor Mono';
+    font-weight: 400;
+    font-size: 23px;
 }
 

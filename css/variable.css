@@ -3,11 +3,14 @@
     --on-main-color: #907128;  /* На фоне */
     --on-main-color-2: #90712846;
     --secondary-2-color: #C2B7A2;  /* На фоне основной */ 
+    --secondary-2-color-light: #F9F8F6;  /* На фоне основной */ 
 
     --accent-color: #DE2B49;  /* Яркий цвет*/
     --love-1-color: #EECFC7;  /* Блок love */
     --love-2-color: #F1A8B4;  /* Блок love 2 */
     
     --cursor-color: rgba(202, 132, 27, 0.747);  /* Цвет курсора */
-}
 
+    --grid-elem-slider-button-first-line-height: calc(100% - var(--grid-elem-slider-button-second-line-height));
+    --grid-elem-slider-button-second-line-height: 30px;
+}

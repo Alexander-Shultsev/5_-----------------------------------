@@ -183,6 +183,20 @@
     color: #000000;
 }
 
+.title-medium {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 54px;
+    color: var(--on-main-color);
+}
+
+.subtitle-medium {
+    font-family: 'Victor Mono';
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 18.03px;
+    font-weight: 700;
+}
+
 .big-number {
     font-family: 'Playfair Display', serif;
     font-weight: 400;

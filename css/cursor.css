@@ -1,9 +1,5 @@
 @import url('variable.css');
 
-* {
-    /* cursor: none; */
-}
-
 .cursor-outline {
     width: 40px;
     height: 40px;

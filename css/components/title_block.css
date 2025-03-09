@@ -1,0 +1,32 @@
+.title-block {
+    position: relative;
+    width: 100%;
+    padding: 232px 0 154px;
+    text-align: center;
+}
+
+.title-block-title {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title-block .flowers {
+    position: absolute;
+    z-index: 1;
+}
+
+.title-block-flowers-left {
+    left: -7%;
+    bottom: 10%;
+    width: 360px;
+}
+
+.title-block-flowers-right {
+    right: -13%;
+    top: -10%;
+    width: 650px;
+}

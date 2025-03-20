@@ -224,3 +224,42 @@
     font-size: 23px;
 }
 
+.discount-text {
+    font-family: 'Playfair Display', serif;
+    color: var(--on-main-color);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.grob-text {
+    font-family: 'Playfair Display', serif;
+    color: var(--on-main-color);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36.21px;
+}
+
+.final-block-title-main {
+    font-family: 'Playfair Display', serif;
+    color: var(--on-main-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.55px;
+}
+
+.final-block-title {
+    font-family: 'Playfair Display', serif;
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.31px;
+}
+
+.final-block-text {
+    font-family: 'Playfair Display', serif;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 24.14px;
+}

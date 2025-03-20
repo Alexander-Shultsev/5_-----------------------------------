@@ -7,6 +7,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fullscreen-block-love {
+    height: 100vh;
+    margin-bottom: 400px;
+}
+
+
+.color-main {
     background-color: var(--main-color);
 }
 
@@ -18,6 +27,10 @@
     transform: translate(-50%, -50%);
     width: 80vw;
     z-index: 1;
+}
+
+.fullscreen-block-love .background-image-rail {
+    width: 96vw;
 }
 
 .background-image-rail img {
@@ -72,8 +85,12 @@
     gap: 50px;
 }
 
+.fullscreen-block-love .image-container {
+    gap: 10px;
+}
+
 .fullscreen-block .image {
-    height: 70%; 
+    height: 76vh; 
     object-fit: cover;
 }
 
@@ -115,11 +132,82 @@
     }
 }
 
+@keyframes wave-6 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.02);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes wave-7 {
+    0% {
+        transform:  translateY(0);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 /* Применение анимации к изображениям */
-.fullscreen-block .bank-1 {
+.fullscreen-block .animate-1 {
     animation: wave-1 3s ease-in-out infinite;
 }
 
-.fullscreen-block .bank-2 {
+.fullscreen-block .animate-2 {
     animation: wave-2 3s ease-in-out infinite 0.7s;
+}
+
+/* Применение анимации к изображениям */
+.fullscreen-block .animate-6 {
+    animation: wave-6 3s ease-in-out infinite;
+}
+
+.fullscreen-block .animate-7 {
+    animation: wave-7 3s ease-in-out infinite 0.7s;
+}
+
+
+
+/* Игорь и лена фото гроба */
+.block_grob .background-image-rail {
+    max-width: 450px;
+}
+
+.block_grob {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fullscreen-block-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fullscreen-block-text p {
+    width: 60%;
+    text-align: center;
+}
+
+.write-read-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+
+    margin-top: 233px;
+    margin-bottom: 270px;
+}
+
+.write-read-block img {
+    width: 30vw;
 }

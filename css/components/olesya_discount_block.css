@@ -1,0 +1,270 @@
+.grid-container-discount {
+    display: grid;
+    width: 100%;
+    height: 100vh; /* Высота на весь экран */
+    gap: 2px;
+    padding: 2px 0;
+    background-color: var(--main-color);
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-container-discount .discount-item-1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.grid-container-discount .discount-item-2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid-container-discount .discount-item-3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.grid-container-discount .discount-item-4 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.grid-container-discount .discount-item-5 {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+}
+
+.grid-container-discount .grid-item-title a {
+    text-decoration: none;
+    color: var(--main-color);
+    background: var(--on-main-color);
+}
+
+.grid-container-discount .discount-image img {
+    width: 100%;
+    height: 30px;
+    object-fit: cover;
+}
+
+.discount-text-block {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+
+    gap: 35px;
+}
+
+.discount-text-block img {
+    width: 25%;
+}
+
+
+
+
+
+
+
+/* общий класс для всех grid-container */
+/* .grid-container {
+    display: grid;
+    width: 100%;
+    height: 1440px;
+    gap: 2px;
+    padding: 2px 0;
+    background-color: var(--secondary-2-color);
+}
+
+.grid-container-one {
+    grid-template-columns: 0.25fr 0.75fr;
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+}
+
+.grid-container-two {
+    grid-template-columns: 0.75fr 0.25fr;
+    grid-template-rows: 0.7fr 1.6fr 0.7fr;
+    
+    padding-top: 0;
+}
+
+.grid-container-three {
+    grid-template-columns: 1fr 0.6fr 0.6fr;
+    grid-template-rows: 1fr 0.3fr 0.5fr;
+
+    height: 100vh;
+}
+
+.grid-container-one .grid-item, 
+.grid-container-two .grid-item {
+    background-color: #ffffff;
+}
+
+.grid-container-three .grid-item {
+    background-color: var(--secondary-2-color-light);
+}
+
+
+/* ============= Компоненты ============= */
+
+/* .grid-elem-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.grid-elem-number p {
+    margin-top: -70px; 
+}
+
+.grid-elem-photo {
+    position: relative;
+}
+
+.grid-elem-photo img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.grid-elem-bank {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-elem-bank img {
+    max-height: 90%;
+}   
+
+.grid-elem-where {
+    padding: 63px;
+}
+
+.grid-elem-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 54px 51px;
+}
+
+.grid-elem-info span {
+    height: 20px;
+}
+
+.grid-elem-slider-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item-title {
+    padding-bottom: 11px;
+}
+
+.grid-item-subtitle {
+    padding-bottom: 40px;
+}
+
+.button {
+   display: inline-block;
+   padding: 34px 102px;
+   border: 2px solid var(--on-main-color);
+   color: var(--on-main-color);
+   text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--on-main-color);
+    color: #ffffff;
+    transition: all 0.7s ease;
+} */
+
+
+/* ============= Роспись ============= */
+
+/* .grid-container-one .grid-item-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid-container-one .grid-item-2 {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.grid-container-one .grid-item-3 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.grid-container-one .grid-item-4 {
+    grid-column: 2;
+    grid-row: 3;
+} */
+
+
+/* ============= Банкет ============= */
+
+/* .grid-container-two .grid-item-3 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.grid-container-two .grid-item-4 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.grid-container-two .grid-item-1 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid-container-two .grid-item-2 {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}
+
+.grid-container-two .grid-elem-where {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+} */
+
+
+/* ============= Слайдер Наши истории в чём то схожи ============= */
+
+/* .grid-container-wrapper {
+    display: flex;
+}
+
+.grid-container-wrapper .grid-container-three {
+    min-width: 100vw;
+}
+
+.grid-container-three .grid-item-1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.grid-container-three .grid-item-2 {
+    grid-row: 2 / span 2;
+    grid-column: 1;
+}
+
+.grid-container-three .grid-item-3 {
+    grid-row: 1 / span 3;
+    grid-column: 2;
+}
+
+.grid-container-three .grid-item-4 {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+}
+
+.grid-container-three .grid-item-5 {
+    grid-row: 3;
+    grid-column: 3;
+} */

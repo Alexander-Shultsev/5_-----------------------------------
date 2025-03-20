@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Создаем элементы курсора
-    const cursorOutline = document.createElement('div');
-    cursorOutline.className = 'cursor-outline';
-    document.body.appendChild(cursorOutline);
+    // const cursorOutline = document.createElement('div');
+    const cursorOutline = document.getElementsByClassName('cursor-outline')[0];
+    // cursorOutline.className = 'cursor-outline';
+    // document.body.appendChild(cursorOutline);
 
     // Позиции курсора
     let cursorPos = { x: 0, y: 0 };
@@ -30,7 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorOutlinePos.x += (cursorPos.x - cursorOutlinePos.x) * ease;
         cursorOutlinePos.y += (cursorPos.y - cursorOutlinePos.y) * ease;
         
-        cursorOutline.style.transform = `translate(${cursorOutlinePos.x - 20}px, ${cursorOutlinePos.y - 20}px)`;
+        // cursorOutline.style.transform = `translate(${cursorOutlinePos.x - 80}px, ${cursorOutlinePos.y - 80}px)`;
+
+        cursorOutline.style.setProperty('--tx', `${cursorOutlinePos.x - 80}px`);
+        cursorOutline.style.setProperty('--ty', `${cursorOutlinePos.y - 80}px`);
         
         requestAnimationFrame(animateCursor);
     }
@@ -38,16 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
     animateCursor();
 
     // Эффект при наведении на кликабельные элементы
-    const clickables = document.querySelectorAll('a, button, input, textarea');
+    const clickables = document.querySelectorAll('a, button, input, textarea, .swiper-button, .swiper-pagination-bullet');
     clickables.forEach((el) => {
         el.addEventListener('mouseenter', () => {
-            cursorOutline.style.transform = 'translate(-20px, -20px) scale(1.5)';
-            cursorOutline.style.backgroundColor = 'rgba(222, 43, 73, 0.2)';
+            cursorOutline.style.setProperty('--scale', '0.7');
+            cursorOutline.style.setProperty('--opacity', '0.2');
         });
         
         el.addEventListener('mouseleave', () => {
-            cursorOutline.style.transform = 'translate(-20px, -20px) scale(1)';
-            cursorOutline.style.backgroundColor = 'rgba(222, 43, 73, 0.5)';
+            cursorOutline.style.setProperty('--scale', '1');
+            cursorOutline.style.setProperty('--opacity', '1');
         });
     });
 

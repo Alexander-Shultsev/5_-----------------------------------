@@ -25,7 +25,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
+    width: 90vw;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -34,7 +34,6 @@
 
 .background-image-rail img {
     width: 100%;
-    min-width: 800px;
     height: auto;
     object-fit: contain;
 }
@@ -109,7 +108,7 @@
 }
 
 .fullscreen-block .image {
-    height: 76vh; 
+    height: 86vh; 
     object-fit: cover;
 }
 

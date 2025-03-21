@@ -6,8 +6,8 @@
     padding: 2px 0;
     background-color: var(--main-color);
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: calc(100vh / 3) calc(100vh / 3) calc(100vh / 3);
 }
 
 .grid-container-discount .discount-item-1 {
@@ -30,6 +30,10 @@
     grid-row: 3;
 }
 
+.grid-container-discount .discount-item-4 img {
+    object-position: 0 -950px;
+}
+
 .grid-container-discount .discount-item-5 {
     grid-column: 3;
     grid-row: 1 / span 3;
@@ -41,9 +45,17 @@
     background: var(--on-main-color);
 }
 
+.grid-container-discount .discount-item {
+    height: 100%;
+}
+
+.grid-container-discount .discount-image {
+    height: 100%;
+}
+
 .grid-container-discount .discount-image img {
     width: 100%;
-    height: 30px;
+    height: 100%;
     object-fit: cover;
 }
 

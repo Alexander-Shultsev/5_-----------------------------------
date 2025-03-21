@@ -27,14 +27,14 @@
     transform: translate(-50%, -50%);
     width: 80vw;
     z-index: 1;
-}
-
-.fullscreen-block-love .background-image-rail {
-    width: 96vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .background-image-rail img {
     width: 100%;
+    min-width: 800px;
     height: auto;
     object-fit: contain;
 }
@@ -48,29 +48,31 @@
 /* Первый цветок слева */
 .fullscreen-block .flowers_one_left {
     top: 0;
-    left: -80px;
-    width: 400px;
+    left: -5vw;
+    width: 25vw;
+    min-width: 100px;
 }
 
 /* Второй цветок справа */
 .fullscreen-block .flowers_one_right {
     top: 50px;
-    right: -80px;  
-    width: 350px; 
+    right: -5vw;  
+    width: 20vw; 
 }
 
 /* Третий цветок слева */
 .fullscreen-block .flowers_two_left {
     bottom: 10px;
-    left: -80px;
-    width: 250px;
+    left: -4vw;
+    width: 14vw;
 }   
 
 /* Четвертый цветок справа */
 .fullscreen-block .flowers_two_right {
     bottom: 50px;
-    right: -80px;
-    width: 300px;
+    right: -4vw;
+    width: 16vw;
+    min-width: 100px;
 }
 
 
@@ -83,6 +85,23 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+}
+
+@media (max-width: 700px) {
+
+    .fullscreen-block .flowers {
+        display: none;
+    }
+
+    .fullscreen-block {
+        height: auto;
+    }
+
+    .image-container {
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .fullscreen-block-love .image-container {

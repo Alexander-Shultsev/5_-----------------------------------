@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         el.addEventListener('mouseleave', () => {
             cursorOutline.style.setProperty('--scale', '1');
-            cursorOutline.style.setProperty('--opacity', '1');
+            cursorOutline.style.setProperty('--opacity', '0.7');
         });
     });
 

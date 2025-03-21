@@ -9,6 +9,16 @@
     padding-bottom: 30px;
 }
 
+.final-block .final-block-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.final-block .final-block-link img {
+    width: 18px;
+}
+
 .final-block .final-block-title {
     margin-top: 27px;
 }
@@ -17,7 +27,7 @@
     margin-top: 5px;
 }
 
-.final-block img {
+.final-block > img {
     position: absolute;
     top: 0; left: 0;
     width: 100vw;

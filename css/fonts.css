@@ -262,4 +262,5 @@
     font-weight: 400;
     text-decoration: underline;
     line-height: 24.14px;
+    word-wrap: break-word;
 }

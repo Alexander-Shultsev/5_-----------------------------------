@@ -49,32 +49,6 @@
     width: 40%;
 }
 
-@media (max-width: 1120px) {
-
-    .invitation-text {
-        left: 5vh;
-        bottom: 5vh;
-        gap: 3vh;
-    }
-
-    .invitation-text .dear-misha {
-        width: 80vw;
-    }
-    
-
-    .invitation-text .invitation-subtitle {
-        width: 80%;
-    }
-}
-
-@media (max-width: 600px) {   
-
-    .invitation-text .invitation-subtitle {
-        width: 80%;
-        font-size: 15px;
-    }
-}
-
 /* Почему приглашаем именно тебя? */
 .invitation-image-photo-two {
     height: 1560px;
@@ -119,4 +93,101 @@
 
 .invitation-block-three .title-photo {
     width: 80%;
+}
+
+@media (max-width: 1120px) {
+
+    .invitation-text {
+        left: 5vh;
+        bottom: 5vh;
+        gap: 3vh;
+    }
+
+    .invitation-block-three .invitation-text {
+        right: 5vh;
+        bottom: 5vh;
+        gap: 3vh;
+    }
+
+
+    /* Почему приглашаем именно тебя? */
+    .invitation-image-photo-two {
+        height: 1000px;
+        object-position: 15% center;
+    }
+
+    .invitation-text .dear-misha {
+        width: 80vw;
+    }
+    
+
+    .invitation-text .invitation-subtitle {
+        width: 80%;
+    }
+
+    .invitation-text .invitation-title {
+        max-width: 90%;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 750px) {   
+
+    /* Почему приглашаем именно тебя? */
+    .invitation-image-photo-two {
+        height: 800px;
+        object-position: 40% center;
+    }
+
+    .invitation-text .invitation-subtitle {
+        width: 90%;
+    }
+
+    .invitation-text .invitation-title {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 600px) {   
+
+    /* Почему приглашаем именно тебя? */
+    .invitation-image-photo-two {
+        height: 800px;
+        object-position: center center;
+    }
+
+    .invitation-text .invitation-subtitle {
+        font-size: 15px;
+        padding-right: 15px;
+    }
+
+    .invitation-block-three .invitation-text .invitation-subtitle {
+        padding-left: 15px;
+        padding-right: inherit;
+    }
+}
+
+@media (max-width: 425px) {   
+
+    .invitation-text {
+        left: 3vh;
+        bottom: 3vh;
+        gap: 2vh;
+    }
+
+    .invitation-block-three .invitation-text {
+        right: 3vh;
+        bottom: 3vh;
+        gap: 2vh;
+    }
+
+
+    .invitation-text .invitation-title {
+        max-width: inherit;
+        width: 85vw;
+    }
+
+    .invitation-text .invitation-subtitle {
+        width: 100%;
+    }
 }

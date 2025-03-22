@@ -32,6 +32,12 @@
     justify-content: center;
 }
 
+.fullscreen-block-first .background-image-rail img {
+    max-width: 80vw;
+    height: auto;
+    object-fit: contain;
+}
+
 .fullscreen-block-love .background-image-rail img {
     width: 100%;
     height: auto;
@@ -232,6 +238,12 @@
     .write-read-block img {
         width: 40vw;
     }
+
+    .fullscreen-block-first .background-image-rail img {
+        max-width: 110vw;
+        height: auto;
+        object-fit: contain;
+    }
 }
 
 @media (max-width: 700px) {
@@ -263,6 +275,12 @@
     .write-read-block {
         flex-direction: column;
         align-items: center;
+    }
+
+    .fullscreen-block-first .background-image-rail img {
+        max-width: 700px;
+        height: auto;
+        object-fit: contain;
     }
 
     .write-read-block img {

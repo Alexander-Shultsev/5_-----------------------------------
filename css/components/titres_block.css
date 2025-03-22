@@ -41,27 +41,6 @@
     width: 300%; /* Увеличиваем ширину для трех копий контента */
 }
 
-@media (max-width: 1024px) {
-
-    .marquee-content {
-        animation: marquee 20s linear infinite;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .marquee-content {
-        animation: marquee 15s linear infinite;
-    }
-}
-
-@media (max-width: 425px) {
-
-    .marquee-content {
-        animation: marquee 8s linear infinite;
-    }
-}
-
 /* Добавляем копии элементов */
 .marquee-content::after {
     content: '';
@@ -72,4 +51,63 @@
     position: absolute;
     left: 100%;
     top: 0;
+}
+
+/* Блок с прокруткой текса для маленьких экранов */
+.marquee-container-small {
+    display: none;
+    padding: 100px 5vw 300px;
+}
+
+.marquee-container-small .text-scroll {
+    font-size: 55px;
+}
+
+@media (max-width: 1024px) {
+
+    .marquee-container-small {
+        display: block;
+    }
+
+    .marquee-content {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* .marquee-content {
+        animation: marquee 15s linear infinite;
+    } */
+
+    .marquee-container-small {
+        padding: 80px 5vw 250px;
+    }
+
+    .marquee-container-small .text-scroll {
+        font-size: 30px;
+    }
+
+    .marquee-container-small .text-scroll img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    /* .marquee-content {
+        animation: marquee 8s linear infinite;
+    } */
+
+    .marquee-container-small {
+        padding: 50px 7vw 150px;
+    }
+
+    .marquee-container-small .text-scroll {
+        font-size: 25px;
+    }
+
+    .marquee-container-small .text-scroll img {
+        width: 20px;
+    }
 }

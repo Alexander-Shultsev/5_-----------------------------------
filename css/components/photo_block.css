@@ -1,7 +1,6 @@
 /* ========================== Блок с приглашением ========================== */
 .invitation-block {
     width: 100%;
-    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,7 @@
 
 .invitation-image .night-block {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -146,6 +145,10 @@
     .invitation-text .invitation-title {
         font-size: 44px;
     }
+
+    .invitation-image .invitation-image-photo-one {
+        height: 900px;
+    }
 }
 
 @media (max-width: 600px) {   
@@ -164,6 +167,10 @@
     .invitation-block-three .invitation-text .invitation-subtitle {
         padding-left: 15px;
         padding-right: inherit;
+    }
+
+    .invitation-image .invitation-image-photo-one {
+        height: 700px;
     }
 }
 
@@ -189,5 +196,10 @@
 
     .invitation-text .invitation-subtitle {
         width: 100%;
+    }
+
+    /* дорогой миша литвин фото */
+    .invitation-image .invitation-image-photo-one {
+        height: 500px;
     }
 }

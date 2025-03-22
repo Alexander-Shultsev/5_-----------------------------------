@@ -36,9 +36,9 @@
 .marquee-content {
     display: flex;
     padding: 80px 0 300px 0;
-    animation: marquee 27s linear infinite;
+    animation: marquee 30s linear infinite;
     white-space: nowrap;
-    width: 300%; /* Увеличиваем ширину для трех копий контента */
+    width: 260%; /* Увеличиваем ширину для трех копий контента */
 }
 
 /* Добавляем копии элементов */

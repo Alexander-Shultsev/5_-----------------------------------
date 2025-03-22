@@ -217,7 +217,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 85px;
+    gap: 100px;
 
     margin-top: 233px;
     margin-bottom: 270px;
@@ -225,6 +225,12 @@
 
 .write-read-block img {
     width: 30vw;
+    transition: scale 0.2s ease;
+}
+
+.write-read-block img:hover {
+    width: 30vw;
+    scale: 1.1;
 }
 
 @media (max-width: 1024px) {

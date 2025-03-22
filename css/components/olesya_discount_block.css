@@ -36,7 +36,7 @@
 }
 
 .grid-container-discount .grid-item-title a {
-    text-decoration: none;
+    /* text-decoration: ; */
     color: var(--main-color);
     background: var(--on-main-color);
 }

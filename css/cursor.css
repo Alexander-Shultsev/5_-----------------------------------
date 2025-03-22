@@ -15,7 +15,7 @@
     top: 0; left: 0;
     pointer-events: none;
     z-index: 998;
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, scale 0.2s ease, opacity 0.2s ease;
 
     display: flex;
     justify-content: center;

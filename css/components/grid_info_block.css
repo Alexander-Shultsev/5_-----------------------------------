@@ -4,7 +4,7 @@
     width: 100vw;
     height: 1300px;
     gap: 2px;
-    padding: 2px 0;
+    padding: 4px 0;
     background-color: var(--secondary-2-color);
 }
 
@@ -112,12 +112,12 @@
    border: 2px solid var(--on-main-color);
    color: var(--on-main-color);
    text-decoration: none;
+   transition: all 0.7s ease;
 }
 
 .grid-elem-where .button:hover {
     background-color: var(--on-main-color);
     color: #ffffff;
-    transition: all 0.7s ease;
 }
 
 

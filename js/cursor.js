@@ -55,6 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const clickablesImage = document.querySelectorAll('img');
+    clickablesImage.forEach((el) => {
+        el.addEventListener('mouseenter', () => {
+            cursorOutline.style.setProperty('--opacity', '0.1');
+        });
+        
+        el.addEventListener('mouseleave', () => {
+            cursorOutline.style.setProperty('--opacity', '0.7');
+        });
+    });
+
     // Таймер обратного отсчета
     function updateTimer() {
         const targetDate = new Date('2025-07-08T00:00:00');

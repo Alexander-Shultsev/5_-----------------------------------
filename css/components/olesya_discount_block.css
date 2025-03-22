@@ -30,10 +30,6 @@
     grid-row: 3;
 }
 
-.grid-container-discount .discount-item-4 img {
-    object-position: 0 -950px;
-}
-
 .grid-container-discount .discount-item-5 {
     grid-column: 3;
     grid-row: 1 / span 3;

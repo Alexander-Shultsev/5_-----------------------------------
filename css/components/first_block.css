@@ -55,8 +55,8 @@
 /* Второй цветок справа */
 .fullscreen-block .flowers_one_right {
     top: 50px;
-    right: -5vw;  
-    width: 20vw; 
+    right: -5vw;
+    width: 20vw;
 }
 
 /* Третий цветок слева */
@@ -64,7 +64,7 @@
     bottom: 10px;
     left: -4vw;
     width: 14vw;
-}   
+}
 
 /* Четвертый цветок справа */
 .fullscreen-block .flowers_two_right {
@@ -86,42 +86,25 @@
     gap: 50px;
 }
 
-@media (max-width: 700px) {
-
-    .fullscreen-block .flowers {
-        display: none;
-    }
-
-    .fullscreen-block {
-        height: auto;
-    }
-
-    .image-container {
-        padding: 100px 0;
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
 .fullscreen-block-love .image-container {
     gap: 10px;
 }
 
 .fullscreen-block .image {
-    height: 86vh; 
+    height: 86vh;
     object-fit: cover;
 }
 
 /* Первое изображение */
-.fullscreen-block  .bank-1 {
+.fullscreen-block .bank-1 {
     transform: rotate(-7deg);
     z-index: 1;
 }
 
 /* Второе изображение */
-.fullscreen-block  .bank-2 {
+.fullscreen-block .bank-2 {
     margin-top: 40px;
-    transform: rotate(7deg); 
+    transform: rotate(7deg);
     z-index: 0;
 }
 
@@ -130,9 +113,11 @@
     0% {
         transform: rotate(-7deg) translateY(0);
     }
+
     50% {
         transform: rotate(-7deg) translateY(-20px) scale(1.02);
     }
+
     100% {
         transform: rotate(-7deg) translateY(0);
     }
@@ -142,9 +127,11 @@
     0% {
         transform: rotate(7deg) translateY(0);
     }
+
     50% {
-        transform: rotate(7deg) translateY(-20px) scale(1.05); 
+        transform: rotate(7deg) translateY(-20px) scale(1.05);
     }
+
     100% {
         transform: rotate(7deg) translateY(0);
     }
@@ -154,9 +141,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px) scale(1.02);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -164,11 +153,13 @@
 
 @keyframes wave-7 {
     0% {
-        transform:  translateY(0);
+        transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-20px) scale(1.05); 
+        transform: translateY(-20px) scale(1.05);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -228,4 +219,61 @@
 
 .write-read-block img {
     width: 30vw;
+}
+
+@media (max-width: 1024px) {
+    .write-read-block {
+        gap: 60px;
+
+        margin-top: 233px;
+        margin-bottom: 270px;
+    }
+
+    .write-read-block img {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .fullscreen-block .flowers {
+        display: none;
+    }
+
+    .fullscreen-block {
+        height: auto;
+    }
+
+    .block_grob {
+        height: 100vh;
+    }
+
+    .fullscreen-block-text .grob-text {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .image-container {
+        padding: 100px 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /* кнопки написать позвонить */
+    .write-read-block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .write-read-block img {
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .fullscreen-block-text .grob-text {
+        font-size: 20px;
+        width: 90%;
+    }
 }

@@ -32,7 +32,7 @@
     justify-content: center;
 }
 
-.background-image-rail img {
+.fullscreen-block-love .background-image-rail img {
     width: 100%;
     height: auto;
     object-fit: contain;

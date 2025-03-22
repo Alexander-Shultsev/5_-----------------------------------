@@ -56,7 +56,9 @@
 /* Блок с прокруткой текса для маленьких экранов */
 .marquee-container-small {
     display: none;
-    padding: 100px 5vw 300px;
+    align-items: center;
+    height: 100vh;
+    padding: 0 5vw;
 }
 
 .marquee-container-small .text-scroll {
@@ -66,7 +68,7 @@
 @media (max-width: 1024px) {
 
     .marquee-container-small {
-        display: block;
+        display: flex;
     }
 
     .marquee-content {
@@ -81,7 +83,7 @@
     } */
 
     .marquee-container-small {
-        padding: 80px 5vw 250px;
+        padding: 0 5vw;
     }
 
     .marquee-container-small .text-scroll {
@@ -100,7 +102,7 @@
     } */
 
     .marquee-container-small {
-        padding: 50px 7vw 150px;
+        padding: 0 7vw;
     }
 
     .marquee-container-small .text-scroll {

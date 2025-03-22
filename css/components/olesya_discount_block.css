@@ -115,12 +115,25 @@
 }
 
 @media (max-width: 600px) {
-    .grid-container-discount {
-        grid-template-rows: 250px 400px 400px 400px 400px ;
+    .discount-text-block {
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    
+        gap: 20px;
     }
 
-    .discount-text {
-        font-size: 17px;
+    .discount-text-block .discount-text {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .discount-text-block img {
+        width: 25%;
+    }
+
+    .grid-container-discount {
+        grid-template-rows: 350px 400px 400px 400px 400px ;
     }
 
     .discount-text-block img {
@@ -129,17 +142,31 @@
 }
 
 @media (max-width: 450px) {
+
+    .discount-text-block {
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    
+        gap: 20px;
+    }
+
+    .discount-text-block .discount-text {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .discount-text-block img {
+        width: 200px;
+    }
+
     .grid-container-discount {
-        grid-template-rows: 200px 300px 300px 300px 300px ;
+        grid-template-rows: 450px 300px 300px 300px 300px ;
     }
 
     .discount-text {
         font-size: 14px;
-    }
-
-    .discount-text-block img {
-        width: 30%;
-    }    
+    }  
 
     .discount-text-block {
         padding: 20px;

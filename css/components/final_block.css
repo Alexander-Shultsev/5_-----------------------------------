@@ -31,6 +31,14 @@
     margin-top: 5px;
 }
 
+.final-block-link .final-block-text {
+    margin-top: 0;
+}
+
+.final-block-link {
+    margin-top: 5px;
+}
+
 .final-block > img {
     position: absolute;
     top: 0; left: 0;

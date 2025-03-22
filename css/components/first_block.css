@@ -248,6 +248,11 @@
 
 @media (max-width: 700px) {
 
+    .fullscreen-block-love {
+        margin-bottom: 200px;
+    }
+    
+
     .fullscreen-block .flowers {
         display: none;
     }
@@ -278,7 +283,7 @@
     }
 
     .fullscreen-block-first .background-image-rail img {
-        max-width: 700px;
+        max-width: 2700px;
         height: auto;
         object-fit: contain;
     }
@@ -295,3 +300,19 @@
         width: 90%;
     }
 }
+
+@media (max-width: 425px) {
+    .write-read-block {
+        margin-top: 130px;
+    }
+    .fullscreen-block-text .grob-text {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .fullscreen-block-love {
+        margin-bottom: 50px;
+    }
+}
+
+

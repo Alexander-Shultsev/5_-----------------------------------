@@ -333,13 +333,13 @@
     
     .grid-container-one {
         height: inherit;
-        grid-template-rows: 180px 900px 400px 350px;
+        grid-template-rows: 900px 400px 350px;
         grid-template-columns: 100vw;
     }
 
     .grid-container-two {
         height: inherit;
-        grid-template-rows: 180px 900px 400px 350px;
+        grid-template-rows: 900px 400px 350px;
         grid-template-columns: 100vw;
     }
 
@@ -351,44 +351,42 @@
 
     /* Роспись */
     .grid-container-one .grid-item-1 {
-        grid-column: 1;
-        grid-row: 1;
+        display: none;
     }
     
     .grid-container-one .grid-item-2 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
     
     .grid-container-one .grid-item-3 {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     
     .grid-container-one .grid-item-4 {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     /* Банкет */
     .grid-container-two .grid-item-1 {
-        grid-column: 1;
-        grid-row: 1;
+        display: none;
     }
     
     .grid-container-two .grid-item-2 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
     
     .grid-container-two .grid-item-3 {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     
     .grid-container-two .grid-item-4 {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     .grid-item-title {

@@ -40,12 +40,30 @@
     gap: 60px;
 }
 
+
 .invitation-text .dear-misha {
     width: 900px;
 }
 
 .invitation-text .invitation-subtitle {
     width: 40%;
+}
+
+.invitation-text .invitation-subtitle a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.invitation-subtitle .invitation-image-overlay {
+    display: none;
+    
+    position: absolute;
+    max-width: 80vw;
+    bottom: var(--height); left: 0;
+}
+
+.invitation-subtitle-two-span {
+    cursor: pointer;
 }
 
 /* Почему приглашаем именно тебя? */

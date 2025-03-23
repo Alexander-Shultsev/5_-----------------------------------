@@ -14,24 +14,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="sourse/image/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="sourse/image/favicon/favicon-16x16.png">
     <link rel="manifest" href="sourse/image/favicon/site.webmanifest">
+
+    <!-- Animate.css -->
+    <script src="wow_animate/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
 </head>
 
 <body>
+
     <!-- Приветственный блок -->
     <div class="fullscreen-block fullscreen-block-first color-main">
-        <div class="background-image-rail">
+        <div class="background-image-rail wow fadeIn" data-wow-delay="1.3s">
             <img src="sourse/image/othets/webp/background_wedding_rail.webp" alt="Фоновое изображение">
         </div>
 
-        <img class="flowers flowers_one_left" src="sourse/image/othets/flowers_one_left.png" alt="Фоновое изображение">
-        <img class="flowers flowers_one_right" src="sourse/image/othets/flowers_one_right.png"
+        <img class="flowers flowers_one_left wow fadeIn" data-wow-delay="0.6s" src="sourse/image/othets/flowers_one_left.png" alt="Фоновое изображение">
+        <img class="flowers flowers_one_right wow fadeIn" data-wow-delay="0.7s" src="sourse/image/othets/flowers_one_right.png"
             alt="Фоновое изображение">
-        <img class="flowers flowers_two_left" src="sourse/image/othets/flowers_two_left.png" alt="Фоновое изображение">
-        <img class="flowers flowers_two_right" src="sourse/image/othets/flowers_two_right.png"
+        <img class="flowers flowers_two_left wow fadeIn" data-wow-delay="0.8s" src="sourse/image/othets/flowers_two_left.png" alt="Фоновое изображение">
+        <img class="flowers flowers_two_right wow fadeIn" data-wow-delay="0.9s" src="sourse/image/othets/flowers_two_right.png"
             alt="Фоновое изображение">
 
-        <div class="image-container">
-            <img src="sourse/image/banks/webp/1.webp" alt="Изображение 1" class="image bank-1 animate-1">
+        <div class="image-container wow fadeInDownBig" data-wow-duration="1.3s" data-wow-delay="1.3s">
+            <img src="sourse/image/banks/webp/1.webp" alt="Изображение 1" class="image bank-1 animate-1 ">
             <img src="sourse/image/banks/webp/2.webp" alt="Изображение 2" class="image bank-2 animate-2">
         </div>
     </div>
@@ -39,13 +47,14 @@
     <!-- Блок с пригласительным текстом -->
     <div class="invitation-block">
         <div class="invitation-image">
-            <img class="invitation-image-photo invitation-image-photo-one" src="sourse/image/photo/webp/igor_olesya_2.webp"
+            <img class="invitation-image-photo invitation-image-photo-one"
+                src="sourse/image/photo/webp/igor_olesya_2.webp" alt="Фоновое изображение приглашения">
+            <img class="night-block" src="sourse/image/othets/webp/night_block.webp"
                 alt="Фоновое изображение приглашения">
-            <img class="night-block" src="sourse/image/othets/webp/night_block.webp" alt="Фоновое изображение приглашения">
 
             <div class="invitation-text">
-                <img class="dear-misha" src="sourse/image/othets/dear_misha.png" alt="Фоновое изображение приглашения">
-                <p class="invitation-subtitle text-photo">Игорь & Олеся - твои верные фанаты и подписчики приглашают
+                <img class="dear-misha wow fadeInUp" src="sourse/image/othets/dear_misha.png" alt="Фоновое изображение приглашения">
+                <p class="invitation-subtitle text-photo wow fadeInUp" data-wow-delay="0.15s">Игорь & Олеся - твои верные фанаты и подписчики приглашают
                     тебя и твою будущую жену Адель на свадьбу </p>
             </div>
         </div>
@@ -59,14 +68,16 @@
                     <img src="sourse/image/icon/love_1.png" alt="Marquee Image">
                 </div>
                 <div class="marquee-item">
-                    <p class="text-scroll">Мы разработали этот сайт-приглашение эксклюзивно для вас и очень старались.
+                    <p class="text-scroll">Мы разработали этот сайт-приглашение эксклюзивно для вас и очень
+                        старались.
                         Надеемся, вам понравится!</p>
                 </div>
                 <div class="marquee-item">
                     <img src="sourse/image/icon/love_1.png" alt="Marquee Image">
                 </div>
                 <div class="marquee-item">
-                    <p class="text-scroll">Мы разработали этот сайт-приглашение эксклюзивно для вас и очень старались.
+                    <p class="text-scroll">Мы разработали этот сайт-приглашение эксклюзивно для вас и очень
+                        старались.
                         Надеемся, вам понравится!</p>
                 </div>
                 <div class="marquee-item">
@@ -77,7 +88,7 @@
     </div>
 
     <!-- Блок с прокруткой текста для маленьких экранов -->
-    <div class="marquee-container-small">
+    <div class="marquee-container-small wow fadeInRight">
         <p class="text-scroll">
             <span>
                 <img src="sourse/image/icon/love_1.png" alt="Marquee Image">
@@ -100,8 +111,8 @@
             <div class="rotating-background"></div>
         </div>
         <div class="date-timer-block">
-            <div class="date rotating-text-date">8 июля 2025</div>
-            <div class="time-circles">
+            <div class="date rotating-text-date wow fadeInUp">8 июля 2025</div>
+            <div class="time-circles wow fadeInUp" data-wow-delay="0.15s">
                 <div class="time-circle">
                     <div class="circle-number where-text">00</div>
                     <div class="circle-label where-text-lable">месяцы</div>
@@ -127,7 +138,7 @@
     </div>
 
     <!-- Блок с тайминг мероприятия -->
-    <div class="title-block">
+    <div class="title-block wow fadeInUp" data-wow-delay="0.5s">
         <h2 class="title-block-title title-large">Тайминг <br> мероприятия</h2>
         <img class="flowers title-block-flowers-left" src="sourse/image/othets/flower_four.png"
             alt="Фоновое изображение">
@@ -138,36 +149,36 @@
     <!-- Роспись в загсе -->
     <div class="grid-container grid-container-one">
         <div class="grid-item grid-item-1 grid-elem-number big-number">
-            <p>1</p>
+            <p class="wow fadeInDown" data-wow-delay="0.7s">1</p>
         </div>
         <div class="grid-item grid-item-2 grid-elem-bank">
-            <img class="grid-bank-image" src="sourse/image/banks/webp/банка 4.webp" alt="Фоновое изображение">
+            <img class="grid-bank-image wow fadeInLeft" data-wow-delay="0.7s" src="sourse/image/banks/webp/банка 4.webp" alt="Фоновое изображение">
         </div>
         <div class="grid-item grid-item-3 grid-elem-photo">
-            <img src="sourse/image/photo/webp/taiming_one.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="0.9s" src="sourse/image/photo/webp/taiming_one.webp" alt="Фоновое изображение">
         </div>
         <div class="grid-item grid-item-4 grid-elem-where">
-            <p class="grid-item-title">Дворец бракосочетания №4</p>
-            <p class="grid-item-subtitle">ул. Бутырская, д. 17 </p>
-            <a class="button" href="https://yandex.ru/maps/-/CHBgEVMf" target="_blank">посмотреть на карте</a>
+            <p class="grid-item-title wow fadeInUp" data-wow-delay="0.5s">Дворец бракосочетания №4</p>
+            <p class="grid-item-subtitle wow fadeInUp" data-wow-delay="0.65s">ул. Бутырская, д. 17 </p>
+            <a class="button wow fadeInUp" data-wow-delay="0.8s" href="https://yandex.ru/maps/-/CHBgEVMf" target="_blank">посмотреть на карте</a>
         </div>
     </div>
 
     <!-- Банкет -->
     <div class="grid-container grid-container-two">
         <div class="grid-item grid-item-1 big-number grid-elem-number">
-            <p>2</p>
+            <p class="wow fadeInDown" data-wow-delay="0.7s">2</p>
         </div>
         <div class="grid-item grid-item-2 grid-elem-bank">
-            <img class="grid-bank-image" src="sourse/image/banks/webp/банка 5.webp" alt="Фоновое изображение">
+            <img class="grid-bank-image wow fadeInLeft" data-wow-delay="0.7s" src="sourse/image/banks/webp/банка 5.webp" alt="Фоновое изображение">
         </div>
         <div class="grid-item grid-item-3 grid-elem-photo">
-            <img class="grid-photo-image" src="sourse/image/photo/webp/taiming_two.webp" alt="Фоновое изображение">
+            <img class="grid-photo-image wow fadeIn" data-wow-delay="0.9s" src="sourse/image/photo/webp/taiming_two.webp" alt="Фоновое изображение">
         </div>
         <div class="grid-item grid-item-4 grid-elem-where">
-            <p class="grid-item-title">PLAZA GARDEN | Зал City Lounge</p>
-            <p class="grid-item-subtitle">наб. Краснопресненская, д. 12</p>
-            <a class="button"
+            <p class="grid-item-title wow fadeInUp" data-wow-delay="0.5s">PLAZA GARDEN | Зал City Lounge</p>
+            <p class="grid-item-subtitle wow fadeInUp" data-wow-delay="0.65s">наб. Краснопресненская, д. 12</p>
+            <a class="button wow fadeInUp" data-wow-delay="0.8s"
                 href="https://yandex.ru/maps/org/city_lounge/48778147599/?ll=37.556388%2C55.754203&source=serp_navig&utm_source=share&z=16.68"
                 target="_blank">посмотреть на карте</a>
         </div>
@@ -178,15 +189,18 @@
         <div class="invitation-image">
             <img class="invitation-image-photo invitation-image-photo-two" src="sourse/image/photo/webp/litvin.webp"
                 alt="Фоновое изображение приглашения">
-            <img class="night-block" src="sourse/image/othets/webp/night_block.webp" alt="Фоновое изображение приглашения">
+            <img class="night-block" src="sourse/image/othets/webp/night_block.webp"
+                alt="Фоновое изображение приглашения">
 
             <div class="invitation-text">
-                <p class="invitation-title title-photo">Почему приглашаем именно тебя?</p>
-                <p class="invitation-subtitle invitation-subtitle-two text-photo"><span
-                        class="invitation-subtitle-two-span">В одном из своих видео</span> ты <span
-                        class="invitation-subtitle-two-span">«официально зарегистрировал семью из абсолютно незнакомых
-                        людей»</span> и <span class="invitation-subtitle-two-span">«записал это в книгу рекордов
-                        Литвина»</span>. Предлагаю тебе пополнить свою книгу рекордов присутствием на свадьбе верных
+                <p class="invitation-title title-photo wow fadeInUp">Почему приглашаем именно тебя?</p>
+                <p class="invitation-subtitle invitation-subtitle-two text-photo wow fadeInUp" data-wow-delay="0.15s">
+                    <img class="invitation-image-overlay" src="sourse/image/photo/webp/litvin_video_1.webp" alt="">
+                    <img class="invitation-image-overlay" src="sourse/image/photo/webp/litvin_video_2.webp" alt="">
+                    <img class="invitation-image-overlay" src="sourse/image/photo/webp/litvin_video_3.webp" alt="">
+                    <a href="https://youtu.be/kAiUdQwpSbs?si=xB512ObWsHd2T-zx" target="_blank"><span class="invitation-subtitle-two-span">В одном из своих видео</span></a> ты 
+                    <a href="https://youtu.be/kAiUdQwpSbs?si=e_bWdq1zF_09leMQ&t=1397" target="_blank"><span class="invitation-subtitle-two-span">«официально зарегистрировал семью из абсолютно незнакомых людей»</span></a> и 
+                    <a href="https://youtu.be/kAiUdQwpSbs?si=sEEBx2KbyFIrtA56&t=1803" target="_blank"><span class="invitation-subtitle-two-span">«записал это в книгу рекордов Литвина»</span></a>. Предлагаю тебе пополнить свою книгу рекордов присутствием на свадьбе верных
                     фанатов и подписчиков</p>
             </div>
         </div>
@@ -195,13 +209,15 @@
     <!-- Что от вас требуется? -->
     <div class="invitation-block invitation-block-three">
         <div class="invitation-image">
-            <img class="invitation-image-photo invitation-image-photo-two" src="sourse/image/photo/webp/litviin_adel.webp"
+            <img class="invitation-image-photo invitation-image-photo-two"
+                src="sourse/image/photo/webp/litviin_adel.webp" alt="Фоновое изображение приглашения">
+            <img class="night-block" src="sourse/image/othets/webp/night_block.webp"
                 alt="Фоновое изображение приглашения">
-            <img class="night-block" src="sourse/image/othets/webp/night_block.webp" alt="Фоновое изображение приглашения">
 
             <div class="invitation-text">
-                <p class="invitation-title title-photo">Что от вас требуется?</p>
-                <p class="invitation-subtitle invitation-subtitle-two text-photo">От вас требуется только присутствие.
+                <p class="invitation-title title-photo wow fadeInUp">Что от вас требуется?</p>
+                <p class="invitation-subtitle invitation-subtitle-two text-photo wow fadeInUp" data-wow-delay="0.15s">От вас требуется только
+                    присутствие.
                     Считайте, это просто вкусный ужин рядом с офисом Миши и панорамным видом на Москву в кругу
                     молодожёнов и ваших фанатов</p>
             </div>
@@ -209,7 +225,7 @@
     </div>
 
     <!-- Блок о нас заголовок -->
-    <div class="title-block">
+    <div class="title-block wow fadeInUp" data-wow-delay="0.5s">
         <h2 class="title-block-title title-large">О нас</h2>
         <img class="flowers title-block-flowers-left" src="sourse/image/othets/flower_four.png"
             alt="Фоновое изображение">
@@ -223,7 +239,7 @@
             <img src="sourse/image/othets/Love.png" alt="Фоновое изображение">
         </div>
 
-        <div class="image-container">
+        <div class="image-container wow fadeInDown" data-wow-duration="1.3s" data-wow-delay="0.3s">
             <img src="sourse/image/banks/webp/банка 6.webp" alt="Изображение 1" class="image animate-6">
             <img src="sourse/image/banks/webp/банка 7.webp" alt="Изображение 2" class="image animate-7">
         </div>
@@ -232,28 +248,29 @@
 
     <!-- Скидка от Олеси -->
     <div class="grid-container-discount">
-        <div class="discount-item discount-item-1 discount-text-block">
+        <div class="discount-item discount-item-1 discount-text-block wow fadeInDown" data-wow-delay="0.5s">
             <img src="sourse/image/photo/webp/econica_olesya_2.webp" alt="Фоновое изображение">
             <p class="grid-item-title discount-text">Олеся может сделать скидку на покупку модной обуви в магазине
-                <span><a href="https://ekonika.ru/" target="_blank">«Ekonika»</a></span> для твоей будущей жены, которая любит носить нестандартную
+                <span><a href="https://ekonika.ru/" target="_blank">«Ekonika»</a></span> для твоей будущей жены,
+                которая любит носить нестандартную
                 одежду 😉</p>
         </div>
         <div class="discount-item discount-item-2 discount-image">
-            <img src="sourse/image/photo/webp/Econica 1.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="0.8s" src="sourse/image/photo/webp/Econica 1.webp" alt="Фоновое изображение">
         </div>
         <div class="discount-item discount-item-3 discount-image">
-            <img src="sourse/image/photo/webp/Ekonika 2.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="1.1s" src="sourse/image/photo/webp/Ekonika 2.webp" alt="Фоновое изображение">
         </div>
         <div class="discount-item discount-item-4 discount-image">
-            <img src="sourse/image/photo/webp/Ekonika 3.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="1.4s" src="sourse/image/photo/webp/Ekonika 3.webp" alt="Фоновое изображение">
         </div>
         <div class="discount-item discount-item-5 discount-image">
-            <img src="sourse/image/photo/webp/Ekonika 4.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="1.7s" src="sourse/image/photo/webp/Ekonika 4.webp" alt="Фоновое изображение">
         </div>
     </div>
 
     <!-- Блок Наши истории в чём-то схожи заголовок -->
-    <div class="title-block">
+    <div class="title-block wow fadeInUp" data-wow-delay="0.5s">
         <img class="equally" src="sourse/image/othets/equally.png" />
         <h2 class="title-block-title title-large">Наши истории <br> в чём-то схожи</h2>
     </div>
@@ -264,18 +281,18 @@
             <!-- Блок 1 -->
             <div class="grid-container grid-container-three swiper-slide">
                 <div class="grid-item grid-item-1 big-number grid-elem-number">
-                    <p>1 / 5</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">1 / 5</p>
                 </div>
                 <div class="grid-item grid-item-2"></div>
                 <div class="grid-item grid-item-3 grid-elem-bank">
-                    <img class="grid-bank-image" src="sourse/image/banks/webp/банка 8.webp" alt="Фоновое изображение">
+                    <img class="grid-bank-image wow fadeIn" data-wow-delay="0.6s" src="sourse/image/banks/webp/банка 8.webp" alt="Фоновое изображение">
                 </div>
                 <div class="grid-item grid-item-4 grid-elem-info">
-                    <p class="title-medium">Миша</p>
-                    <p class="subtitle-medium">с Сахалина</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="0.7s">Миша</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="0.85s">с Сахалина</p>
                     <span></span>
-                    <p class="title-medium">Игорь</p>
-                    <p class="subtitle-medium">из Великого Новгорода</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="1s">Игорь</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="1.15s">из Великого Новгорода</p>
                 </div>
                 <div class="grid-item grid-item-5">
 
@@ -285,18 +302,18 @@
             <!-- Блок 2 -->
             <div class="grid-container grid-container-three swiper-slide">
                 <div class="grid-item grid-item-1 big-number grid-elem-number">
-                    <p>2 / 5</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">2 / 5</p>
                 </div>
                 <div class="grid-item grid-item-2"></div>
                 <div class="grid-item grid-item-3 grid-elem-bank">
-                    <img class="grid-bank-image" src="sourse/image/banks/webp/банка 9.webp" alt="Фоновое изображение">
+                    <img class="grid-bank-image wow fadeIn" data-wow-delay="0.6s" src="sourse/image/banks/webp/банка 9.webp" alt="Фоновое изображение">
                 </div>
                 <div class="grid-item grid-item-4 grid-elem-info">
-                    <p class="title-medium">Миша</p>
-                    <p class="subtitle-medium">да</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="0.7s">Миша</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="0.85s">да</p>
                     <span></span>
-                    <p class="title-medium">Игорь</p>
-                    <p class="subtitle-medium">да</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="1s">Игорь</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="1.15s">да</p>
                 </div>
                 <div class="grid-item grid-item-5">
 
@@ -306,18 +323,18 @@
             <!-- Блок 3 -->
             <div class="grid-container grid-container-three swiper-slide">
                 <div class="grid-item grid-item-1 big-number grid-elem-number">
-                    <p>3 / 5</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">3 / 5</p>
                 </div>
                 <div class="grid-item grid-item-2"></div>
                 <div class="grid-item grid-item-3 grid-elem-bank">
-                    <img class="grid-bank-image" src="sourse/image/banks/webp/банка 10.webp" alt="Фоновое изображение">
+                    <img class="grid-bank-image wow fadeIn" data-wow-delay="0.6s" src="sourse/image/banks/webp/банка 10.webp" alt="Фоновое изображение">
                 </div>
                 <div class="grid-item grid-item-4 grid-elem-info">
-                    <p class="title-medium">Миша</p>
-                    <p class="subtitle-medium">пранки</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="0.7s">Миша</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="0.85s">пранки</p>
                     <span></span>
-                    <p class="title-medium">Игорь</p>
-                    <p class="subtitle-medium">тренировки</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="1s">Игорь</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="1.15s">тренировки</p>
                 </div>
                 <div class="grid-item grid-item-5">
 
@@ -327,18 +344,18 @@
             <!-- Блок 4 -->
             <div class="grid-container grid-container-three swiper-slide">
                 <div class="grid-item grid-item-1 big-number grid-elem-number">
-                    <p>4 / 5</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">4 / 5</p>
                 </div>
                 <div class="grid-item grid-item-2"></div>
                 <div class="grid-item grid-item-3 grid-elem-bank">
-                    <img class="grid-bank-image" src="sourse/image/banks/webp/банка 11.webp" alt="Фоновое изображение">
+                    <img class="grid-bank-image wow fadeIn" data-wow-delay="0.6s" src="sourse/image/banks/webp/банка 11.webp" alt="Фоновое изображение">
                 </div>
                 <div class="grid-item grid-item-4 grid-elem-info">
-                    <p class="title-medium">Миша</p>
-                    <p class="subtitle-medium">ФК «Сахалинец»</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="0.7s">Миша</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="0.85s">ФК «Сахалинец»</p>
                     <span></span>
-                    <p class="title-medium">Игорь</p>
-                    <p class="subtitle-medium">спортивная секция по Taekwondo WTF</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="1s">Игорь</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="1.15s">спортивная секция по Taekwondo WTF</p>
                 </div>
                 <div class="grid-item grid-item-5">
 
@@ -348,18 +365,18 @@
             <!-- Блок 5 -->
             <div class="grid-container grid-container-three swiper-slide">
                 <div class="grid-item grid-item-1 big-number grid-elem-number">
-                    <p>5 / 5</p>
+                    <p class="wow fadeIn" data-wow-delay="0.5s">5 / 5</p>
                 </div>
                 <div class="grid-item grid-item-2"></div>
                 <div class="grid-item grid-item-3 grid-elem-bank">
-                    <img class="grid-bank-image" src="sourse/image/banks/webp/банка 12.webp" alt="Фоновое изображение">
+                    <img class="grid-bank-image wow fadeIn" data-wow-delay="0.6s" src="sourse/image/banks/webp/банка 12.webp" alt="Фоновое изображение">
                 </div>
                 <div class="grid-item grid-item-4 grid-elem-info">
-                    <p class="title-medium">Миша</p>
-                    <p class="subtitle-medium">25 мая 2025</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="0.7s">Миша</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="0.85s">25 мая 2025</p>
                     <span></span>
-                    <p class="title-medium">Игорь</p>
-                    <p class="subtitle-medium">08 июля 2025</p>
+                    <p class="title-medium wow fadeInUp" data-wow-delay="1s">Игорь</p>
+                    <p class="subtitle-medium wow fadeInUp" data-wow-delay="1.15s">08 июля 2025</p>
                 </div>
                 <div class="grid-item grid-item-5">
 
@@ -385,58 +402,61 @@
     <!-- Блок с гробом -->
     <div class="fullscreen-block block_grob">
         <div class="background-image-rail">
-            <img src="sourse/image/photo/webp/igor_olesya_3_grob.webp" alt="Фоновое изображение">
+            <img class="wow fadeIn" data-wow-delay="1.3s" data-wow-duration="1.3" src="sourse/image/photo/webp/igor_olesya_3_grob.webp" alt="Фоновое изображение">
         </div>
 
-        <img class="flowers flowers_one_left" src="sourse/image/othets/flowers_one_left.png" alt="Фоновое изображение">
-        <img class="flowers flowers_one_right" src="sourse/image/othets/flowers_one_right.png"
+        <img class="flowers flowers_one_left wow fadeIn" data-wow-delay="0.6s" src="sourse/image/othets/flowers_one_left.png" alt="Фоновое изображение">
+        <img class="flowers flowers_one_right wow fadeIn" data-wow-delay="0.7s" src="sourse/image/othets/flowers_one_right.png"
             alt="Фоновое изображение">
-        <img class="flowers flowers_two_left" src="sourse/image/othets/flowers_two_left.png" alt="Фоновое изображение">
-        <img class="flowers flowers_two_right" src="sourse/image/othets/flowers_two_right.png"
+        <img class="flowers flowers_two_left wow fadeIn" data-wow-delay="0.8s" src="sourse/image/othets/flowers_two_left.png" alt="Фоновое изображение">
+        <img class="flowers flowers_two_right wow fadeIn" data-wow-delay="0.9s" src="sourse/image/othets/flowers_two_right.png"
             alt="Фоновое изображение">
     </div>
 
     <div class="fullscreen-block-text">
-        <p class="grob-text">Ждём вас на наше торжество как никого другого 💗</br></br>Подарите молодоженам возможность
-            лично встретиться с вами
-            и сделать фотографии 😊 📷</br></br>Ваше присутствие сделает нашу свадьбу незабываемой,
+        <p class="grob-text wow fadeInUp" data-wow-delay="0.5s">Ждём вас на наше торжество как никого другого 💗</p>
+        <br><br><br>
+        <p class="grob-text wow fadeInUp" data-wow-delay="0.65s">Подарите молодоженам возможность лично встретиться с вами и сделать фотографии 😊 📷</p>
+        <br><br><br>
+        <p class="grob-text wow fadeInUp" data-wow-delay="0.8s">Ваше присутствие сделает нашу свадьбу незабываемой,
             ведь это наша с Олесей мечта 😎</p>
     </div>
 
     <!-- Кнопки написать позвонить -->
     <div class="write-read-block">
         <a href="https://t.me/TaekwondoClub_Coach" target="_blank">
-            <img src="sourse/image/banks/webp/банка 13.webp" alt="">
+            <img class="wow fadeInUp" data-wow-delay="0.5s" src="sourse/image/banks/webp/банка 13.webp" alt="">
         </a>
         <a href="tel:+79685263743" target="_blank">
-            <img src="sourse/image/banks/webp/банка 14.webp" alt="">
+            <img class="wow fadeInUp" data-wow-delay="0.8s" src="sourse/image/banks/webp/банка 14.webp" alt="">
         </a>
     </div>
 
     <div class="final-block">
         <img src="sourse/image/othets/flowers_final.jpg" alt="">
-        <p class="final-block-title-main">Особая благодарность всем,</br>кто работал над созданием этого сайта</p>
+        <p class="final-block-title-main wow fadeInUp" data-wow-delay="0.5s">Особая благодарность всем,</br>кто работал над созданием этого сайта</p>
 
-        <p class="final-block-title">Ведущий разработчик</p>
-        <a class="final-block-link" href="https://t.me/AlexanderShultsev" target="_blank">
+        <p class="final-block-title wow fadeInUp" data-wow-delay="0.65s">Ведущий разработчик</p>
+        <a class="final-block-link wow fadeInUp" data-wow-delay="0.8s" href="https://t.me/AlexanderShultsev" target="_blank">
             <img src="sourse/image/icon/telegram_logo.png" alt="">
             <p class="final-block-text">Александр Шульцев</p>
         </a>
 
 
-        <p class="final-block-title">Дизайнеры</p>
-        <p class="final-block-text">Арина Ксенофонтова</p>
-        <p class="final-block-text">Полина Добрынина</p>
-        <p class="final-block-text">Артём Алахов</p>
-        <p class="final-block-text">Петрова София</p>
+        <p class="final-block-title wow fadeInUp" data-wow-delay="0.95s">Дизайнеры</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="1.1s">Арина Ксенофонтова</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="1.25s">Полина Добрынина</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="1.4s">Артём Алахов</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="1.65s">Петрова София</p>
 
-        <p class="final-block-title">Редакторы</p>
-        <p class="final-block-text">Анастасия Семёнова</p>
-        <p class="final-block-text">Ирина Бойко</p>
+        <p class="final-block-title wow fadeInUp" data-wow-delay="1.8s">Редакторы</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="1.95s">Анастасия Семёнова</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="2.1s">Ирина Бойко</p>
 
-        <p class="final-block-title">ну и конечно же</p>
-        <p class="final-block-text">Игорь & Олеся</p>
+        <p class="final-block-title wow fadeInUp" data-wow-delay="2.25s">ну и конечно же</p>
+        <p class="final-block-text wow fadeInUp" data-wow-delay="2.4s">Игорь & Олеся</p>
     </div>
+
 
 
 

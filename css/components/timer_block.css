@@ -28,7 +28,7 @@
     transform: translate(-50%, -50%);
     width: 130vw;
     height: 130vw;
-    animation: rotate 16s infinite;
+    animation: rotate 20s infinite;
 }
 
 @media (max-width: 1024px) {

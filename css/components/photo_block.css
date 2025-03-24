@@ -1,7 +1,6 @@
 /* ========================== Блок с приглашением ========================== */
 .invitation-block {
     width: 100%;
-    background-color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +23,7 @@
 
 .invitation-image .night-block {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -41,12 +40,30 @@
     gap: 60px;
 }
 
+
 .invitation-text .dear-misha {
     width: 900px;
 }
 
 .invitation-text .invitation-subtitle {
     width: 40%;
+}
+
+.invitation-text .invitation-subtitle a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.invitation-subtitle .invitation-image-overlay {
+    display: none;
+    
+    position: absolute;
+    max-width: 80vw;
+    bottom: var(--height); left: 0;
+}
+
+.invitation-subtitle-two-span {
+    cursor: pointer;
 }
 
 /* Почему приглашаем именно тебя? */
@@ -73,7 +90,7 @@
 }
 
 .invitation-block-three .night-block {
-    bottom: 0;
+    bottom: 4px;
     right: 0;
     width: 100%;
     height: 100%;
@@ -99,13 +116,13 @@
 
     .invitation-text {
         left: 5vh;
-        bottom: 5vh;
+        bottom: 7vh;
         gap: 3vh;
     }
 
     .invitation-block-three .invitation-text {
         right: 5vh;
-        bottom: 5vh;
+        bottom: 7vh;
         gap: 3vh;
     }
 
@@ -146,6 +163,10 @@
     .invitation-text .invitation-title {
         font-size: 44px;
     }
+
+    .invitation-image .invitation-image-photo-one {
+        height: 900px;
+    }
 }
 
 @media (max-width: 600px) {   
@@ -157,13 +178,17 @@
     }
 
     .invitation-text .invitation-subtitle {
-        font-size: 15px;
-        padding-right: 15px;
+        font-size: 17px;
+        padding-right: 25px;
     }
 
     .invitation-block-three .invitation-text .invitation-subtitle {
-        padding-left: 15px;
+        padding-left: 22px;
         padding-right: inherit;
+    }
+
+    .invitation-image .invitation-image-photo-one {
+        height: 700px;
     }
 }
 
@@ -171,13 +196,13 @@
 
     .invitation-text {
         left: 3vh;
-        bottom: 3vh;
+        bottom: 4vh;
         gap: 2vh;
     }
 
     .invitation-block-three .invitation-text {
         right: 3vh;
-        bottom: 3vh;
+        bottom: 4vh;
         gap: 2vh;
     }
 
@@ -189,5 +214,10 @@
 
     .invitation-text .invitation-subtitle {
         width: 100%;
+    }
+
+    /* дорогой миша литвин фото */
+    .invitation-image .invitation-image-photo-one {
+        height: 500px;
     }
 }

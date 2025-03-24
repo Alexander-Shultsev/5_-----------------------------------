@@ -4,7 +4,7 @@
     width: 100vw;
     height: 1300px;
     gap: 2px;
-    padding: 2px 0;
+    padding: 4px 0;
     background-color: var(--secondary-2-color);
 }
 
@@ -112,12 +112,12 @@
    border: 2px solid var(--on-main-color);
    color: var(--on-main-color);
    text-decoration: none;
+   transition: all 0.7s ease;
 }
 
 .grid-elem-where .button:hover {
     background-color: var(--on-main-color);
     color: #ffffff;
-    transition: all 0.7s ease;
 }
 
 
@@ -181,9 +181,6 @@
     display: flex;
 }
 
-.grid-container-wrapper .grid-container-three {
-    /* min-width: 100vw; */
-}
 
 .grid-container-three .grid-item-1 {
     grid-row: 1;
@@ -210,6 +207,47 @@
     grid-column: 3;
 }
 
+@media (max-width: 1300px) {
+    /* слайдер */
+    .grid-container-three {
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: 20% 50% 30%;
+    }
+
+    .grid-container-three .grid-item-1 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .grid-container-three .big-number {
+        font-size: 100px;
+        padding-top: 40px;
+    }
+    
+    /* пустой элемент */
+    .swiper-slide .grid-item-2 {
+        display: none;
+        grid-row: inherit;
+        grid-column: inherit;
+    }
+    
+    /* банка */
+    .grid-container-three .grid-item-3 {
+        grid-row: 2 / span 2;
+        grid-column: 1;
+    }
+    
+    .grid-container-three .grid-item-4 {
+        grid-row: 1 / span 2;
+        grid-column: 2;
+    }
+    
+    .grid-container-three .grid-item-5 {
+        grid-row: 3;
+        grid-column: 2;
+    }
+}
+
 
 @media (max-width: 1120px) {
     .grid-container {
@@ -219,18 +257,16 @@
 
 @media (max-width: 950px) {
 
-    .grid-container {
-        height: 1200px;
-    }
-
     .grid-container-one {
         grid-template-columns: 35vw 65vw;
         grid-template-rows: 15% 50% 35%;
+        height: 1200px;
     }
     
     .grid-container-two {
         grid-template-columns: 65vw 35vw;
         grid-template-rows: 15% 50% 35%;
+        height: 1200px;
     }
 
     /* Роспись */
@@ -294,52 +330,63 @@
 }
 
 @media (max-width: 600px) {
-    .grid-container {
+    
+    .grid-container-one {
         height: inherit;
-        grid-template-rows: 180px 900px 400px 350px;
+        grid-template-rows: 900px 400px 350px;
+        grid-template-columns: 100vw;
+    }
+
+    .grid-container-two {
+        height: inherit;
+        grid-template-rows: 900px 400px 350px;
+        grid-template-columns: 100vw;
+    }
+
+    .grid-container-three {
+        height: 100vh;
+        grid-template-rows: 75% 25%;
         grid-template-columns: 100vw;
     }
 
     /* Роспись */
     .grid-container-one .grid-item-1 {
-        grid-column: 1;
-        grid-row: 1;
+        display: none;
     }
     
     .grid-container-one .grid-item-2 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
     
     .grid-container-one .grid-item-3 {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     
     .grid-container-one .grid-item-4 {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     /* Банкет */
     .grid-container-two .grid-item-1 {
-        grid-column: 1;
-        grid-row: 1;
+        display: none;
     }
     
     .grid-container-two .grid-item-2 {
         grid-column: 1;
-        grid-row: 2;
+        grid-row: 1;
     }
     
     .grid-container-two .grid-item-3 {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
     
     .grid-container-two .grid-item-4 {
         grid-column: 1;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     .grid-item-title {
@@ -377,6 +424,25 @@
 
     .grid-elem-where {
         padding: 30px;
+    }
+
+    /* слайдер */
+    .swiper-slide .grid-item-1 {
+        display: none;
+    }
+
+    .swiper-slide .grid-item-3 {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    
+    .swiper-slide .grid-item-4 {
+        display: none;
+    }
+    
+    .swiper-slide .grid-item-5 {
+        grid-row: 2;
+        grid-column: 1;
     }
 }
 

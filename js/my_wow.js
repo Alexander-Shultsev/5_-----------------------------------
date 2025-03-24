@@ -9,7 +9,7 @@ function updateWowDelays() {
 
         // Уменьшаем задержку на 40% для мобильных
         el.dataset.wowDelay = isMobile ?
-            `${parseFloat(originalDelay) * 0.3}s` :
+            `${parseFloat(originalDelay) * 0.5}s` :
             originalDelay;
     });
 

@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         imageOverlay[1].style.setProperty('--height', `${height + 20}px`);
         imageOverlay[2].style.setProperty('--height', `${height + 20}px`);
     }
-    
+
     // Добавляем обработчик события resize
     window.addEventListener('resize', onResize);
 
@@ -142,27 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Обновляем таймер каждую секунду
     setInterval(updateTimer, 1000);
     updateTimer(); // Запускаем сразу
-}); 
+});
 
-function updateWowDelays() {
-    const isMobile = window.innerWidth <= 768;
-    
-    const wowElements = document.querySelectorAll('[data-wow-delay]');
-  
-    wowElements.forEach(el => {
-      const originalDelay = el.getAttribute('data-wow-delay-original') || el.dataset.wowDelay;
-      el.setAttribute('data-wow-delay-original', originalDelay); // Сохраняем исходное значение
-      
-      // Уменьшаем задержку на 40% для мобильных
-      el.dataset.wowDelay = isMobile ? 
-        `${parseFloat(originalDelay) * 0.3}s` : 
-        originalDelay;
-    });
-  
-    // Переинициализация WOW.js
-    new WOW().init();
-  }
-  
-  // Запуск при загрузке и изменении размера
-  window.addEventListener('load', updateWowDelays);
-  window.addEventListener('resize', updateWowDelays);
+

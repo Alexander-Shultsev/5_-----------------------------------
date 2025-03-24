@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         cursorPos.y = lastMousePos.y + window.scrollY;
     });
 
+
+
     // Обновление позиции при прокрутке
     window.addEventListener('scroll', () => {
         cursorPos.x = lastMousePos.x + window.scrollX;
@@ -27,15 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Анимация внешнего круга курсора
     function animateCursor() {
         const ease = 0.7;
-        
+
         cursorOutlinePos.x += (cursorPos.x - cursorOutlinePos.x) * ease;
         cursorOutlinePos.y += (cursorPos.y - cursorOutlinePos.y) * ease;
-        
+
         // cursorOutline.style.transform = `translate(${cursorOutlinePos.x - 80}px, ${cursorOutlinePos.y - 80}px)`;
 
         cursorOutline.style.setProperty('--tx', `${cursorOutlinePos.x - 80}px`);
         cursorOutline.style.setProperty('--ty', `${cursorOutlinePos.y - 80}px`);
-        
+
         requestAnimationFrame(animateCursor);
     }
 
@@ -48,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cursorOutline.style.setProperty('--scale', '0.7');
             cursorOutline.style.setProperty('--opacity', '0.2');
         });
-        
+
         el.addEventListener('mouseleave', () => {
             cursorOutline.style.setProperty('--scale', '1');
             cursorOutline.style.setProperty('--opacity', '0.7');
@@ -79,7 +81,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // document.querySelectorAll('.marquee-content').forEach(content => {
+    //     content.addEventListener('animationiteration', () => {
+    //         // Перемещаем первый элемент в конец для бесконечности
+    //         const firstItem = content.children[0];
+    //         content.appendChild(firstItem.cloneNode(true));
+    //         firstItem.remove();
+    //     });
+    // });
+
     // Обновляем таймер каждую секунду
     setInterval(updateTimer, 1000);
     updateTimer(); // Запускаем сразу
-}); 
+});
+

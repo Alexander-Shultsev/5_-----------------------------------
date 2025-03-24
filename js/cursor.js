@@ -143,3 +143,27 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(updateTimer, 1000);
     updateTimer(); // Запускаем сразу
 }); 
+
+function updateWowDelays() {
+    const isMobile = window.innerWidth <= 768;
+    console.log(isMobile);
+    
+    const wowElements = document.querySelectorAll('[data-wow-delay]');
+  
+    wowElements.forEach(el => {
+      const originalDelay = el.getAttribute('data-wow-delay-original') || el.dataset.wowDelay;
+      el.setAttribute('data-wow-delay-original', originalDelay); // Сохраняем исходное значение
+      
+      // Уменьшаем задержку на 40% для мобильных
+      el.dataset.wowDelay = isMobile ? 
+        `${parseFloat(originalDelay) * 0.5}s` : 
+        originalDelay;
+    });
+  
+    // Переинициализация WOW.js
+    new WOW().init();
+  }
+  
+  // Запуск при загрузке и изменении размера
+  window.addEventListener('load', updateWowDelays);
+  window.addEventListener('resize', updateWowDelays);

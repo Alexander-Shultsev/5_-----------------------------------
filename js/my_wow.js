@@ -2,7 +2,7 @@ function updateWowDelays() {
     const isMobile = window.innerWidth <= 768;
 
     const wowElements = document.querySelectorAll('[data-wow-delay]');
-
+ 
     wowElements.forEach(el => {
         const originalDelay = el.getAttribute('data-wow-delay-original') || el.dataset.wowDelay;
         el.setAttribute('data-wow-delay-original', originalDelay); // Сохраняем исходное значение

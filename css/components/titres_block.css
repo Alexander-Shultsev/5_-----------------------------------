@@ -12,7 +12,7 @@
 .marquee-content {
     display: flex;
     align-items: center;
-    animation: infiniteScroll 9s linear infinite;
+    animation: infiniteScroll 15s linear infinite;
     gap: 50px;
     padding: 80px 0 300px 0;
 }
